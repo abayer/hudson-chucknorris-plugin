@@ -1,0 +1,7 @@
+This is a fork of the standard chucknorris plugin to allow users to
+opt-in/opt-out from seeing Chuck, depending on whether the global
+default is set to show Chuck without opt-out, or to not show Chuck
+without opt-in.
+
+I'll probably fold this into the actual plugin, but didn't want to
+step on toes yet.

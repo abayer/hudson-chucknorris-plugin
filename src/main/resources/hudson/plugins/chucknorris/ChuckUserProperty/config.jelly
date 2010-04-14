@@ -1,0 +1,14 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <j:choose>
+    <j:when test="${instance.globalChuckOptIn}">
+      <f:entry title="${%Display Chuck}">
+        <f:checkbox name="chucknorris.showChuckOptIn" checked="${instance.showChuckOptIn}" />
+      </f:entry>
+    </j:when> 
+    <j:otherwise>
+      <f:entry title="${%Don't Display Chuck}">
+        <f:checkbox name="chucknorris.showChuckOptOut" checked="${instance.showChuckOptOut}" />
+      </f:entry>
+    </j:otherwise>
+  </j:choose>
+</j:jelly>

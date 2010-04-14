@@ -47,19 +47,6 @@ public class ChuckUserProperty extends UserProperty implements Describable<UserP
     }
 
     @Exported
-    public boolean getShouldShowChuck() {
-        // If true, users won't see Chuck unless they opt in, so return showChuckOptIn.
-        if (getGlobalChuckOptIn()) {
-            return showChuckOptIn;
-        }
-        // If false, users will see Chuck unless they opt out.
-        // So return the inverse of showChuckOptOut.
-        else {
-            return !showChuckOptOut;
-        }
-    }
-        
-    @Exported
     public boolean getGlobalChuckOptIn() {
         return ChuckProjectProperty.DESCRIPTOR.getOptIn();
     }
